@@ -16,11 +16,4 @@ A lightweight Flask-based API (Dockerized) for extracting specific fields from P
 
 ## 🧱 Project Structure
 
-pdf-ocr-api/
-├── app/
-│ ├── main.py # Flask app entry point
-│ ├── extract.py # Logic for OCR and field extraction
-│ └── requirements.txt # Python dependencies
-├── Dockerfile # For containerizing the app
-├── README.md # Project documentation
-├── .gitignore # Ignore build and environment files
+<pre><code>### 🧱 Project Structure ``` 📁 pdf-ocr-api ├── 📁 app │ ├── 📄 main.py # Flask app entry point │ ├── 📄 extract.py # Logic for OCR and field extraction │ └── 📄 requirements.txt # Python dependencies ├── 📄 Dockerfile # For containerizing the app ├── 📄 README.md # Project documentation └── 📄 .gitignore # Ignore build and environment files ``` </code></pre>
