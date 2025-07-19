@@ -5,11 +5,18 @@ services:
     container_name: pdf_extractor_api
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - "5000:5000"
     volumes:
-      - .:/app
+      - ./app:/app
+    working_dir: /app
     restart: unless-stopped
     environment:
       - FLASK_ENV=production
+    networks:
+      - npm-network  # 👈 add this
+
+networks:
+  npm-network:
+    external: true  # 👈 match n8n
