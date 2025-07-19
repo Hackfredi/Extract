@@ -14,3 +14,9 @@ services:
     restart: unless-stopped
     environment:
       - FLASK_ENV=production
+    networks:
+      - npm-network  # 👈 add this
+
+networks:
+  npm-network:
+    external: true  # 👈 match n8n
